@@ -1,0 +1,14 @@
+- Algorithm Understanding
+Feature selection methods are intended to reduce the number of input variables to those that are believed to be most useful to a model in order to predict the target variable. What algorithms can be used to automatically select the most important features (regression, etc..)? Describe at least 3?
+
+Correlation Coefficient
+Random Forest Importance
+Exhaustive Feature Selection
+
+- Explain data leakage and overfitting (define each)? Explain the effect of data leakage and overfitting on the performance of an ML model.
+
+
+- Explain what our outliers in your data? Explain at least two methods to deal/treat outliers in your data?
+
+
+- What is feature scaling and why is it important to our model? Explain the different between Normalization and Standardization?

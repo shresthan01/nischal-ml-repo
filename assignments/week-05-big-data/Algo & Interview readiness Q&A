@@ -1,0 +1,12 @@
+- Algorithm Understanding
+How does the Gradient-Boosted Tree Algorithm work in Classification? How does Gradient Boost differ from AdaBoost and Logistic Regression?
+
+
+- What is a Delta Lake and how does it offer a solution to building reliable data pipelines?
+Data lake is a central repository, where large set of structured and unstructured data are stored. It can process all data type  
+
+- When working with Pandas, we use the class pandas.core.frame.DataFrame and when working with the pandas API in Spark, we use the class pyspark.pandas.frame.DataFrame, are these the same, explain why or why not?
+
+
+- What is a Machine Learning Pipeline is and why it’s important? What are the steps in a Machine Learning workflow?
+
