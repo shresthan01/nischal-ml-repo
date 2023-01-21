@@ -14,4 +14,4 @@ No, these two libraries anre not same. Pandas dataframe is heterogeneous two-dim
 Spark dataframes are distributed data collections that are organized into rows and columns. It has multiple nodes and supports parallelization. It is distributed and hence, processing in the Spark DataFrame is faster for a large amount of data. It follows Lazy Execution which means that a task is not executed until an action is performed.
 
 - What is a Machine Learning Pipeline is and why it’s important? What are the steps in a Machine Learning workflow?
-
+ML pipeline is an end-to-end automated machine learning workflow to produce a ML model. It consists of multiple sequential steps
