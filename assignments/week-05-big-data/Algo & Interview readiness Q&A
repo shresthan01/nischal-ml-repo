@@ -1,5 +1,7 @@
 - Algorithm Understanding
 How does the Gradient-Boosted Tree Algorithm work in Classification? How does Gradient Boost differ from AdaBoost and Logistic Regression?
+Gradient Boosted Trees perform classification by combining the outputs from individual trees. It combines many decision trees to reduce the risk of overfitting each individual tree faces. It uses a method called boosting to build independent decision trees and combine them in parallel. Boosting combines weak learners (usually decision trees with only one split, called decision stumps) sequentially, so that each new tree corrects the errors of the previous one.
+
 
 
 - What is a Delta Lake and how does it offer a solution to building reliable data pipelines?
