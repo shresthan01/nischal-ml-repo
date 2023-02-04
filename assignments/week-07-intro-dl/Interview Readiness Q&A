@@ -8,12 +8,29 @@
 
 
 - What is an activation function?
+An activation function is a mathematical function used in artificial neural networks to introduce non-linearity into the output of a neuron. The activation function determines the output of a neuron given an input or set of inputs. It maps the inputs to a corresponding output in a certain range, such as 0 to 1 or -1 to 1, to represent the activation or firing of the neuron.
 
+The choice of activation function depends on the specific problem and the type of neural network being used. The activation function helps to introduce non-linearity into the output of the neural network, allowing it to model complex relationships in the input data.
 
-- What are the outputs of the following activation functions: ReLU, Softmax Tanh, Sigmoid
+- What are the outputs of the following activation functions: ReLU, Softmax, Tanh, Sigmoid
+ReLU (Rectified Linear Unit): The ReLU activation function maps all negative inputs to 0 and all positive inputs to their original value. The output range is [0, infinity).
 
+Softmax: The softmax activation function is used for multiclass classification problems and maps a vector of K real values to a probability distribution over K classes. The function computes the exponential of each input value, normalizes the results so that they add up to 1, and outputs the normalized values as the probabilities for each class. The output range is [0, 1] and the sum of all outputs is 1.
+
+Tanh (Hyperbolic Tangent): The tanh activation function maps inputs to a value between -1 and 1. The tanh function is similar to the sigmoid function, but it outputs values in a larger range and is symmetric around 0.
+
+Sigmoid: The sigmoid activation function maps inputs to a value between 0 and 1. The function computes the exponential of the input and normalizes it to obtain a value in the [0, 1] range. The sigmoid function is commonly used in binary classification problems.
 
 - What is the TPOT algorithm and how does it work?
+TPOT is a Python Automated Machine Learning tool that optimizes machine learning pipelines using genetic programming. TPOT will automate the most tedious part of machine learning by intelligently exploring thousands of possible pipelines to find the best one for your data.
 
+TPOT works to search for the best machine learning pipeline for a given dataset and problem. It starts by generating a population of random pipelines, which are made up of combinations of machine learning algorithms and pre-processing steps.
+
+TPOT then evaluates the performance of each pipeline using cross-validation and a user-specified performance metric. The pipelines with the best performance are then selected to breed the next generation of pipelines through genetic operations such as crossover and mutation.
+
+This process continues for a specified number of generations, or until a termination criterion is met, such as a specified number of pipelines being evaluated or a certain level of performance being achieved. The best pipeline from the final generation is then selected and returned as the optimal solution.
+
+TPOT allows the user to focus on other important aspects of the machine learning problem, such as feature engineering and model interpretability.
 
 - What does TPOT stand for?
+Tree-based Pipeline Optimization Tool
