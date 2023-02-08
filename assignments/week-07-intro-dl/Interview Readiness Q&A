@@ -5,7 +5,11 @@
 
 
 - What is Gradient Descent and how does it work?
+Gradient descent is an optimization algorithm which is commonly-used to train machine learning models and neural networks.  Training data helps these models learn over time, and the cost function within gradient descent specifically acts as a barometer, gauging its accuracy with each iteration of parameter updates. Until the function is close to or equal to zero, the model will continue to adjust its parameters to yield the smallest possible error.
 
+The starting point is just an arbitrary point for us to evaluate the performance. From that starting point, we will find the derivative (or slope), and from there, we can use a tangent line to observe the steepness of the slope. The slope will inform the updates to the parameters—i.e. the weights and bias. The slope at the starting point will be steeper, but as new parameters are generated, the steepness should gradually reduce until it reaches the lowest point on the curve, known as the point of convergence.
+
+Similar to finding the line of best fit in linear regression, the goal of gradient descent is to minimize the cost function, or the error between predicted and actual y. In order to do this, it requires two data points—a direction and a learning rate. These factors determine the partial derivative calculations of future iterations, allowing it to gradually arrive at the local or global minimum (i.e. point of convergence).
 
 - What is an activation function?
 An activation function is a mathematical function used in artificial neural networks to introduce non-linearity into the output of a neuron. The activation function determines the output of a neuron given an input or set of inputs. It maps the inputs to a corresponding output in a certain range, such as 0 to 1 or -1 to 1, to represent the activation or firing of the neuron.
