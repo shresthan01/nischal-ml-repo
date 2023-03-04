@@ -1,5 +1,7 @@
 - In the transformer architecture in the paper "Attention Is All You Need", how does Multi-head Attention work?
-
+The multi-head attention mechanism allows the model to selectively attend to different parts of the input sequence at different levels of abstraction, which is important for capturing long-range dependencies and contextual relationships between tokens in the sequence.
+It involves computing attention scores in parallel across multiple "heads" or subspaces of the input embeddings. Specifically, the input embeddings are first transformed into queries, keys, and values using learned linear projections. Then, attention scores are computed for each head independently by taking the dot product of the queries with the keys.
+These attention scores are then scaled by the square root of the dimension of the key vectors to mitigate the effects of large dot products. The scaled attention scores are passed through a softmax function to obtain a probability distribution over the values. Finally, the values are weighted by the attention scores and summed to produce the output of the multi-head attention layer.
 
 
 - What is the main idea behind Positional Encoding?
