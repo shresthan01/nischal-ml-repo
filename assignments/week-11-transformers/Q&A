@@ -1,0 +1,13 @@
+- In the transformer architecture in the paper "Attention Is All You Need", how does Multi-head Attention work?
+
+
+
+- What is the main idea behind Positional Encoding?
+Positional encoding is a technique used in the field of natural language processing (NLP) to inject positional information into sequential data, such as text or speech, before feeding it into a neural network. The idea behind positional encoding is to provide the model with a way to differentiate between the different positions of the input sequence. This is important because without positional information, the model may not be able to distinguish between words that appear in different positions in the sequence, and as a result, may not be able to understand the context of the input.
+
+- What is EarlyStopping and why do we use it?
+EarlyStopping is a regularization technique used in machine learning to prevent overfitting of a model. It is a technique to stop the training process before the model has completely converged, based on certain performance criteria. During training, the model is optimized to minimize the loss function on the training set, which can result in the model becoming too complex and overfitting to the training data. EarlyStopping helps prevent this by monitoring the model's performance on a validation set during training, and stopping the training process if the performance on the validation set does not improve for a certain number of epochs.
+In EarlyStopping, we define a "patience" parameter, which represents the number of epochs to wait for the validation loss to improve before stopping the training process. If the validation loss does not improve for the specified number of epochs, the training process is stopped, and the model with the best validation loss is returned.
+
+- How would explain what a transformer model is to business stakeholders (at a high level)?
+A transformer model is a type of machine learning model used in natural language processing. It process the entire sequence of tokens in parallel, which makes them much faster and more efficient. The transformer model is based on the attention mechanism, which allows the model to selectively focus on different parts of the input sequence during processing. This attention mechanism enables the model to capture long-range dependencies between tokens, which is essential for language modeling and understanding.
