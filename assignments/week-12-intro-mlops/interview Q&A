@@ -2,16 +2,40 @@
 
 
 - How does the Prophet Algorithm differ from an LSTM?
+The Prophet Algorithm is a forecasting tool developed by Facebook that is designed to handle time-series data with seasonal and trend components. It works by decomposing the time-series data into trend, seasonal, and error components, and then modeling each component separately using a regression model. The algorithm uses a non-linear optimization procedure to fit the model to the data and can handle missing data and outliers. It also allows the user to include additional external regressors that may be related to the time-series being forecasted.
 
+LSTM, on the other hand, is a type of neural network that can handle time-series data by incorporating information from past observations to make predictions about future observations. LSTMs have a memory component that allows them to capture long-term dependencies in the data, making them well-suited for forecasting tasks. Unlike the Prophet Algorithm, LSTMs do not require the data to have specific seasonal or trend components and can handle a wide range of time-series data.
+
+In summary, while both the Prophet Algorithm and LSTM are effective at forecasting time-series data, they differ in their approach. The Prophet Algorithm is designed to handle time-series data with seasonal and trend components and can incorporate external regressors, while LSTMs are flexible and can handle a wide range of time-series data without requiring specific components.
 
 - Why does an LSTM have poor performance against ARIMA and Profit for Time Series?
+There are a few reasons why an LSTM may have poorer performance compared to ARIMA or Profit in certain cases:
 
+    Data Requirements: LSTMs typically require large amounts of data to train effectively, particularly if the time series data is complex or has long-term dependencies. ARIMA and Profit, on the other hand, may be able to achieve good performance with smaller amounts of data.
+
+    Model Complexity: LSTMs are complex models with many parameters, and as such, they can be more difficult to tune and train effectively. ARIMA and Profit, by comparison, are relatively simple models that may be easier to optimize and train.
+
+    Interpretability: LSTMs are often considered black-box models, meaning that it can be difficult to understand why the model is making certain predictions. ARIMA and Profit, on the other hand, are more transparent models that allow for easier interpretation of the results.
 
 - What is exponential smoothing and why is it used in Time Series Forecasting?
+Exponential smoothing is a popular method used in time series forecasting to produce a smoothed time series by applying weights that decrease exponentially over time. The method assigns a weight to each observation in the time series, with more recent observations receiving higher weights and older observations receiving lower weights.
 
+The basic idea behind exponential smoothing is to estimate the level and trend components of a time series by using weighted averages of past observations. By giving more weight to recent observations, exponential smoothing can capture short-term fluctuations in the data while also smoothing out longer-term trends.
+
+Exponential smoothing is used in time series forecasting because it is a simple and effective method for producing smoothed forecasts of a time series. The method is particularly useful when the time series exhibits trend and/or seasonal patterns, and when the time series is noisy or erratic. Exponential smoothing is also computationally efficient and can be implemented easily in most software packages.
 
 - What is stationarity? What is seasonality? Why Is Stationarity Important in Time Series Forecasting?
+In time series analysis and forecasting, stationarity and seasonality are important concepts to understand.
 
+Stationarity refers to the statistical properties of a time series that remain constant over time, such as the mean, variance, and autocorrelation structure. In a stationary time series, the statistical properties of the series are not affected by changes in time. This means that the mean, variance, and autocorrelation of the time series will be constant over time, and the series will not exhibit any long-term trends or cycles.
+
+Seasonality refers to patterns in a time series that repeat at regular intervals, such as daily, weekly, monthly, or yearly cycles. Seasonality can be caused by factors such as weather patterns, holiday effects, or trends in consumer behavior. Time series with seasonality exhibit regular and predictable patterns that can be modeled and forecasted.
+
+Stationarity is important in time series forecasting because many time series models, such as ARIMA and exponential smoothing, assume that the time series is stationary. Stationarity simplifies the modeling process and enables accurate predictions to be made. In contrast, non-stationary time series can be more difficult to model, and forecasts based on non-stationary data may be less accurate.
 
 - How is seasonality different from cyclicality? Fill in the blanks:
-___ is predictable, whereas ___ is not.
+Seasonality refers to patterns in a time series that repeat at regular intervals. These patterns are often related to external factors such as weather, holidays, or the time of year. For example, sales of ice cream tend to increase in the summer and decrease in the winter, and this pattern repeats each year.
+
+Cyclicality, on the other hand, refers to patterns in a time series that repeat at irregular intervals, often due to economic or business cycles. These patterns can be shorter or longer than seasonal patterns and can last for several years or decades. For example, the stock market may experience cycles of booms and busts that last for several years, with no regular pattern or frequency.
+
+Seasonality is predictable, whereas cyclicality is not.
